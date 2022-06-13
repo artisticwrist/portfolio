@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(109, 223, 155);
+    background: linear-gradient(
+      0deg,
+      rgba(109, 223, 155, 1) 0%,
+      rgba(109, 223, 155, 1) 44%,
+      rgba(109, 223, 155, 1) 100%
+    );
+    height: 100vh;
+  }
+  
+  nav{
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  
+  
+  .nav-list{
+      display: inline-block;
+  }
+  
+  .nav-list a{
+      text-decoration: none;
+      color: white;
+      padding: 60px;
+  }
+
+  h2{
+      color: white;
+  }
+
+  main{
+      height: 90vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+    }
+
+  form{
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      height: 20vh;
+      width: 20%;
+      height: 55vh;
+  }
+
+
+  input{
+      background: none;
+      height: 10vh;
+      border-color: white;
+      color: white;
+      border-right-width: 0px;
+      border-left-width: 0px;
+      border-top-width: 0px;
+      border-bottom-width: 3px;
+  }
+
+  #priority{
+      background: none;
+      height: 5vh;
+  }
+
+  button{
+    border: none;
+    margin-top: 2rem;
+    height: 7vh;
+    font-size: 1rem;
+    border-radius: 80px;
+    color: rgba(0, 0, 0, 0.39);
+    background: white;
+  }
+
+  @media only screen and (max-width:768px){
+
+    .nav-list a{
+        text-decoration: none;
+        color: white;
+        padding: 40px;
+        font-size: 1rem;
+    }
+      form{
+          width:40%;
+      }
+  }
+
+  @media only screen and (max-width:414px){
+
+    .nav-list a{
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-size: 0.7rem;
+    }
+      form{
+          width:40%;
+      }
+  }
